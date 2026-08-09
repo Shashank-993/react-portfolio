@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Menu, User, Layers3, FolderKanban } from "lucide-react";
 import me from "../assets/image.png";
+import { useLenis } from "lenis/react";
 
 const menuItems = [
   {
@@ -26,6 +27,7 @@ const menuItems = [
 ];
 
 const MobileMenu = () => {
+  const lenis = useLenis();
   return (
     <Sheet>
       <SheetTrigger asChild className="z-10">
@@ -76,8 +78,8 @@ const MobileMenu = () => {
               }}
             >
               <SheetClose asChild>
-                <a href={`#${item.title}`}>
                   <Button
+                    onClick={() => lenis?.scrollTo(`#${item.title}`)}
                     variant="ghost"
                     className="
                     group
@@ -104,7 +106,6 @@ const MobileMenu = () => {
 
                     {item.title}
                   </Button>
-                </a>
               </SheetClose>
             </motion.div>
           ))}
