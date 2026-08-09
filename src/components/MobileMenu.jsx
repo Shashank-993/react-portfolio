@@ -12,7 +12,7 @@ import me from "../assets/image.png";
 
 const menuItems = [
   {
-    title: "About",
+    title: "Experience",
     icon: <User className="h-5 w-5" />,
   },
   {
@@ -39,6 +39,7 @@ const MobileMenu = () => {
 
       <SheetContent
         side="right"
+        showCloseButton={false}
         className="flex w-[320px] flex-col overflow-hidden border-l border-purple-500/20 bg-gradient-to-b from-[#111118] via-[#0B0909] to-black p-0"
       >
         {/* Background Glow */}
@@ -75,9 +76,10 @@ const MobileMenu = () => {
               }}
             >
               <SheetClose asChild>
-                <Button
-                  variant="ghost"
-                  className="
+                <a href={`#${item.title}`}>
+                  <Button
+                    variant="ghost"
+                    className="
                     group
                     h-14
                     w-full
@@ -95,13 +97,14 @@ const MobileMenu = () => {
                     hover:shadow-lg
                     hover:shadow-purple-700/20
                   "
-                >
-                  <span className="text-purple-400 transition-transform duration-300 group-hover:scale-110">
-                    {item.icon}
-                  </span>
+                  >
+                    <span className="text-purple-400 transition-transform duration-300 group-hover:scale-110">
+                      {item.icon}
+                    </span>
 
-                  {item.title}
-                </Button>
+                    {item.title}
+                  </Button>
+                </a>
               </SheetClose>
             </motion.div>
           ))}
