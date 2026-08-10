@@ -9,7 +9,7 @@ const ProjectDetails = () => {
   const project = projects.find((p) => p.id === Number(id));
   console.log(project);
   return (
-    <section className="project-details mx-auto flex w-full h-screen p-(--space-l) flex-col gap-8 lg:flex-row lg:items-stretch">
+    <section className="project-details overflow-y-scroll mx-auto flex w-full h-screen p-(--space-l) flex-col gap-8 lg:flex-row lg:items-stretch">
       <ProjectGallery project={project} />
       <ProjectInfo project={project} />
     </section>
