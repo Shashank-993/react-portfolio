@@ -50,18 +50,25 @@ const MobileMenu = () => {
 
         {/* Header */}
         <SheetHeader className="relative border-b border-purple-500/20 px-6 py-8">
-          <div className="flex items-center gap-4">
-            <img
-              src={me}
-              alt="Shashank Mengar"
-              className="h-14 w-14 rounded-full border border-purple-500/40 object-cover shadow-lg shadow-purple-600/30"
-            />
+          <div className="flex flex-col items-start gap-4">
+            <div className="flex items-center gap-2">
+              <img
+                src={me}
+                alt="Shashank Mengar"
+                className="h-14 w-14 rounded-full border border-purple-500/40 object-cover shadow-lg shadow-purple-600/30"
+              />
 
-            <div>
-              <h2 className="text-xl font-bold text-white">Shashank Mengar</h2>
+              <div>
+                <h2 className="text-xl font-bold text-white">
+                  Shashank Mengar
+                </h2>
 
-              <p className="text-sm text-purple-300">React Developer</p>
+                <p className="text-sm text-purple-300">React Developer</p>
+              </div>
             </div>
+            <p className="text-sm text-blue-300">SAL College of Engineering</p>
+            <p className="text-sm text-gray-300">B.E. Computer Engineering</p>
+            <p className="text-sm text-green-300">CGPA: 7.52</p>
           </div>
         </SheetHeader>
 
@@ -78,10 +85,10 @@ const MobileMenu = () => {
               }}
             >
               <SheetClose asChild>
-                  <Button
-                    onClick={() => lenis?.scrollTo(`#${item.title}`)}
-                    variant="ghost"
-                    className="
+                <Button
+                  onClick={() => lenis?.scrollTo(`#${item.title}`)}
+                  variant="ghost"
+                  className="
                     group
                     h-14
                     w-full
@@ -99,13 +106,13 @@ const MobileMenu = () => {
                     hover:shadow-lg
                     hover:shadow-purple-700/20
                   "
-                  >
-                    <span className="text-purple-400 transition-transform duration-300 group-hover:scale-110">
-                      {item.icon}
-                    </span>
+                >
+                  <span className="text-purple-400 transition-transform duration-300 group-hover:scale-110">
+                    {item.icon}
+                  </span>
 
-                    {item.title}
-                  </Button>
+                  {item.title}
+                </Button>
               </SheetClose>
             </motion.div>
           ))}

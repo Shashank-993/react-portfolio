@@ -6,7 +6,7 @@ import { Mail } from "lucide-react";
 import { Heart } from "lucide-react";
 import { ArrowUp } from "lucide-react";
 import { siGithub } from "simple-icons";
-import {FaGithub, FaLinkedin} from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   const year = new Date().getFullYear();
 
