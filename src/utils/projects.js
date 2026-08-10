@@ -15,6 +15,7 @@ export const projects = [
   {
     id: 1,
     title: "Fresh Bites",
+    subTitle: "Food delivery app",
     description:
       "Fresh Bites is a food delivery app which I made during my react.js internship at maxgen technologies.",
     technologies: [
@@ -35,6 +36,7 @@ export const projects = [
   {
     id: 2,
     title: "Weather Now",
+    subTitle: "Weather forecast app",
     description:
       "Weather Now is a frontend mentor challenge which features making a weather forecast app with the help of open-meteo api",
     technologies: [
@@ -53,6 +55,7 @@ export const projects = [
   {
     id: 3,
     title: "BuyNest",
+    subTitle: "E-commerce store",
     description:
       "BuyNest is an ecommerce store with features like search, filter through categories, sort according to rating and cart.",
     technologies: [
@@ -70,6 +73,7 @@ export const projects = [
   {
     id: 4,
     title: "tiklist",
+    subTitle: "Todo app",
     description:
       "tiklist is another frontend mentor challenge which features making a simple todo app where user can add and remove the todos also mark the todo as completed and remove the completed todos as well. The project has light/dark mode feature, filter the todos by all, active and completed filters and the core feature of this project is drag and drop to reorder the todo list.",
     technologies: [

@@ -14,7 +14,7 @@ const HeroContent = () => {
     >
       <motion.h1
         variants={fadeUp}
-        className="max-w-sm text-(length:--fs-3) leading-tight lg:max-w-full lg:text-(length:--fs-4) xl:text-(length:--fs-5) xl:leading-16"
+        className="max-w-sm text-(length:--fs-3) leading-tight lg:max-w-full lg:text-(length:--fs-4) xl:text-6xl xl:leading-16.25"
       >
         Hi ! Myself
         <TypeWriter className="text-purple-500">

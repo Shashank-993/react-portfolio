@@ -19,7 +19,7 @@ const Projects = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="Projects" className="w-full py-(--space-xl)">
+    <section id="Projects" className="w-full px-3 py-(--space-xl)">
       <Swiper
         modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
         effect="coverflow"
@@ -78,7 +78,7 @@ const Projects = () => {
                   <h3 className="text-2xl font-bold text-white">{p.title}</h3>
 
                   <p className="mt-1 text-sm text-purple-300">
-                    Frontend Project
+                    {p.subTitle}
                   </p>
                 </div>
 
