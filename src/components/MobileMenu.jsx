@@ -35,7 +35,7 @@ const MobileMenu = () => {
           variant="ghost"
           className="lg:hidden rounded-full hover:bg-purple-600/15"
         >
-          <Menu className="h-6 w-6 text-white" />
+          <Menu className="h-6 w-6 text-purple-500" />
         </Button>
       </SheetTrigger>
 
@@ -98,7 +98,7 @@ const MobileMenu = () => {
                     px-5
                     text-base
                     font-medium
-                    text-gray-300
+                    text-pink-300
                     transition-all
                     duration-300
                     hover:bg-purple-600/15
@@ -107,7 +107,7 @@ const MobileMenu = () => {
                     hover:shadow-purple-700/20
                   "
                 >
-                  <span className="text-purple-400 transition-transform duration-300 group-hover:scale-110">
+                  <span className="text-pink-300 transition-transform duration-300 group-hover:scale-110">
                     {item.icon}
                   </span>
 

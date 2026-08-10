@@ -18,30 +18,12 @@ const NavLinks = () => {
           <Button
             variant="link"
             onClick={() => lenis?.scrollTo(`#${item}`)}
-            className="z-20 text-white text-(length:--fs--1) tracking-wide cursor-pointer"
+            className="z-20 text-(length:--fs--1) text-pink-300 tracking-wide cursor-pointer"
           >
             {item}
           </Button>
         </motion.div>
       ))}
-      {/* <Button
-        variant="link"
-        className="text-white text-(length:--fs--1) tracking-wide"
-      >
-        About
-      </Button>
-      <Button
-        variant="link"
-        className="text-white text-(length:--fs--1) tracking-wide"
-      >
-        Skills
-      </Button>
-      <Button
-        variant="link"
-        className="text-white text-(length:--fs--1) tracking-wide"
-      >
-        Projects
-      </Button> */}
     </div>
   );
 };

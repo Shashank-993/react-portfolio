@@ -1,11 +1,8 @@
 import { motion } from "motion/react";
-/* import { Github, Linkedin, Mail, ArrowUp, Heart } from "lucide-react";
- */
 import { Button } from "./ui/button";
 import { Mail } from "lucide-react";
 import { Heart } from "lucide-react";
 import { ArrowUp } from "lucide-react";
-import { siGithub } from "simple-icons";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -26,7 +23,7 @@ const Footer = () => {
           transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold text-white lg:text-5xl">
+          <h2 className="text-3xl font-bold text-pink-200 lg:text-5xl">
             Let's Build Something Amazing
           </h2>
 
@@ -36,7 +33,10 @@ const Footer = () => {
             a full-time opportunity, I'd love to hear from you.
           </p>
 
-          <Button className="mt-10 rounded-xl bg-purple-600 px-8 py-6 text-base transition-all hover:scale-105 hover:bg-purple-700">
+          <Button
+            href="mailto:shashaaank21@gmail.com"
+            className="mt-10 rounded-xl bg-purple-600 px-8 py-6 text-base transition-all hover:scale-105 hover:bg-purple-700"
+          >
             <Mail className="mr-2 h-5 w-5" />
             Get In Touch
           </Button>

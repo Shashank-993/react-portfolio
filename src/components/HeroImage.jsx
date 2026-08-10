@@ -43,7 +43,7 @@ const HeroImage = () => {
         >
           {/* Front */}
           <div
-            className="absolute inset-0 overflow-hidden rounded-2xl outline outline-blue-700/50 outline-offset-4 md:outline-offset-6"
+            className="absolute inset-0 overflow-hidden rounded-2xl  outline-blue-700/50 outline-offset-4 md:outline-offset-6"
             style={{
               backfaceVisibility: "hidden",
               WebkitBackfaceVisibility: "hidden",
@@ -117,7 +117,7 @@ const HeroImage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.7 }}
             transition={{ delay: 1.5 }}
-            className="mt-4 text-center text-xs tracking-wide text-gray-500"
+            className="mt-4 text-center text-xs tracking-wide text-pink-300"
           >
             Open menu for education details
           </motion.p>
@@ -126,7 +126,7 @@ const HeroImage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.7 }}
             transition={{ delay: 1.5 }}
-            className="hidden md:block mt-4 text-center text-xs tracking-wide text-gray-500"
+            className="hidden md:block mt-4 text-center text-xs tracking-wide text-pink-300"
           >
             Hover to see education details
           </motion.p>

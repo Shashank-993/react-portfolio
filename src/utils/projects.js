@@ -49,7 +49,7 @@ export const projects = [
       "open-meteo API",
     ],
     images: [w1, w3, w2],
-    live: "",
+    live: "https://weather-now-10826.vercel.app/",
     github: "https://github.com/Shashank-993/React-FM/tree/main/weather-app",
   },
   {
@@ -85,7 +85,7 @@ export const projects = [
       "dnd-kit",
     ],
     images: [tl, td],
-    live: "",
+    live: "https://tiklist.netlify.app/",
     github: "https://github.com/Shashank-993/React-FM/tree/main/todo-app",
   },
 ];
