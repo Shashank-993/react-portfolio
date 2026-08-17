@@ -26,20 +26,17 @@ const Footer = () => {
           <h2 className="text-3xl font-bold text-pink-200 lg:text-5xl">
             Let's Build Something Amazing
           </h2>
-
           <p className="mx-auto mt-5 max-w-xl leading-8 text-gray-400">
             I'm always interested in creating beautiful, performant and
             user-friendly web applications. Whether it's a freelance project or
             a full-time opportunity, I'd love to hear from you.
           </p>
-
-          <Button
-            href="mailto:shashaaank21@gmail.com"
-            className="mt-10 rounded-xl bg-purple-600 px-8 py-6 text-base transition-all hover:scale-105 hover:bg-purple-700"
-          >
-            <Mail className="mr-2 h-5 w-5" />
-            Get In Touch
-          </Button>
+          <a href="mailto:shashaaank21@gmail.com">
+            <Button className="mt-10 rounded-xl bg-purple-600 px-8 py-6 text-base transition-all hover:scale-105 hover:bg-purple-700">
+              <Mail className="mr-2 h-5 w-5" />
+              Get In Touch
+            </Button>
+          </a>
         </motion.div>
 
         {/* Divider */}
