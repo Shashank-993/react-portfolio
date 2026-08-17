@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import TypeWriter from "./TypeWriter";
 import { motion } from "motion/react";
 import { fadeUp, heroContent } from "@/utils/animations";
-import resume from "../assets/Shashank_Mengar_FlowCV_Resume_2026-08-06.pdf";
+import resume from "../assets/Shashank-Mengar-ReactJS.pdf";
 const HeroContent = () => {
   return (
     <motion.div
@@ -43,7 +43,7 @@ const HeroContent = () => {
       >
         <a
           href={resume}
-          download="Shashank_Mengar_FlowCV_Resume_2026-08-06.pdf"
+          download="Shashank-Mengar-ReactJS.pdf"
         >
           <Button
             variant="link"
